@@ -1,5 +1,4 @@
 import calender_events.py
-import get.py
 
 while True:
 	print ("Welcome to Caleder:")
@@ -26,7 +25,8 @@ while True:
 		get_data(username)
 		
 	elif user_input == '4':
-		
+		username = input("Please enter username: ")
+		get_last(username)
 		
 
 
