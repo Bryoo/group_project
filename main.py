@@ -1,7 +1,7 @@
 import calender_events
 
 while True:
-    print("Welcome to Caleder:")
+    print("Welcome to Calender:")
     print("Calender Actions:")
     print("1. Create Calender")
     print("2. Add Task to calender")
@@ -22,17 +22,7 @@ while True:
         calender_events.create_event(username, date, event)
     elif user_input == '3':
         username = input("Please enter username: ")
-        cal = calender_events.get_data(username)
-
-
-        l = []
-        for key in cal:
-            l.append(key['date'])
-            print(l)
-            if key['user_id'] == username:
-                pass
-
-        print(l[-1])
+        calender_events.get_data(username)
 
     elif user_input == '4':
         username = input("Please enter username: ")
