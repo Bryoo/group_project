@@ -1,6 +1,6 @@
-#import calender_events.py
+import calender_events.py
+import get.py
 
-my_bool = True
 while True:
 	print ("Welcome to Caleder:")
 	print ("Calender Actions:")
@@ -22,11 +22,12 @@ while True:
 		event = input("Please enter event: ")
 		creat_event(username,date,event)
 	elif user_input == '3':
-		#
-		#
+		username = input("Please enter username: ")
+		get_data(username)
+		
 	elif user_input == '4':
-		#
-		#
+		
+		
 
 
  
